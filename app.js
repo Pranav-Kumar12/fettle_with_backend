@@ -154,6 +154,11 @@ app.post("/support",function(req,res){
     });
 });
 
+app.post("/profile",function(req,res){
+    flag=0;
+    res.sendFile(__dirname + "\\index.html");
+});
+
 app.post("/cricket_bid",function(req,res){
     // user.findOne({username:username},function(err, doc){
 
