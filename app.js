@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
-
 const { urlencoded } = require("body-parser");
 
 mongoose.connect("mongodb://localhost:27017/userdb", {useNewUrlParser: true});
@@ -124,6 +123,14 @@ app.get("/profile",function(req,res){
 app.get("/support",function(req,res){
     res.sendFile(__dirname + "\\public\\html\\support.html");
 });
+
+app.get("/account-info",function(req,res){
+    res.sendFile(__dirname+"\\public\\html\\account-info.html")
+})
+
+app.get("/account-pts",function(req,res){
+    res.sendFile(__dirname+"\\public\\html\\account-pts.html")
+})
 
 app.post("/support",function(req,res){
     user.findOne({username: username}, function(err, doc){
