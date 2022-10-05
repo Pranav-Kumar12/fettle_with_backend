@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../CSS/account-pts-mobile.css">
+    <link rel="stylesheet" href="CSS/account-pts-mobile.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +12,13 @@
 <body>
 
     <div class = "topbar">
-        <a href="/home.html" id="back"><i class='bx bx-chevron-left'></i></a>
+        <a href="/login" id="back"><i class='bx bx-chevron-left'></i></a>
         <h1>My Account</h1>
     </div>
 
     <div class="balance-box">
         <h3 id="balance-heading">Fetmonds balance</h3>
-        <h1 id="current-balance">497</h1>
+        <h1 id="current-balance"><%=bid_points%></h1>
         <div id="other-payments">
             <div id="expiring">
                 <h4 id="exp-next-mon">Expiring Next Month</h4>
