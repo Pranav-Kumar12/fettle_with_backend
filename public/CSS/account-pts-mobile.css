@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+body {
+    background: linear-gradient(180deg, #CCFFFF 0%, #FFFFFF 77.1%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1.5rem;
+    margin-top: 5rem;
+    padding: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+
+
+
+
+/**  OUR TOPBAR THAT HAS NAVIGATOR TO BACK PAGES **/
+
+.topbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    padding-top: 1rem;
+    background-color:transparent ;
+    height: 4rem;
+}
+
+.topbar h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    position: relative;
+}
+
+.topbar a{
+    border: none;
+    background-color: transparent;
+}
+
+.topbar a i {
+    color: black;
+    font-size: 2.6rem;
+}
+
+#back {
+    position: absolute;
+    transform: translate(-10rem,-0.15rem);
+}
+
+/** TOPBAR ENDS HERE **/
+
+
+/** BALANCE BOX **/
+
+.balance-box{
+    background: linear-gradient(90deg, #005466 0%, #00331E 84.38%);
+    position: fixed;
+    /* margin-top: 13rem; */
+    top: 4.6rem;
+    left: 1.6rem;
+    /* margin-left:0.7rem; */
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 1.3rem;
+}
+
+
+#balance-heading{
+    text-align: center;
+    font-size: 1.3rem;
+    color:white;
+    font-weight: 500;
+}
+
+#other-payments{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#other-payments h3{
+    text-align:center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#other-payments h4{
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+#current-balance{
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 5rem;
+    margin-bottom: 0.6rem;
+}
+
+
+/** BALANCE BOX ENDS **/
+
+
+/** RECENT TRANSACTIONS **/
+
+.recent-tran{
+    position: fixed;
+    /* margin-top: 13rem; */
+    top: 19.7rem;
+    left: 2rem;
+    /* margin-left:0.7rem; */
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.7rem 18rem 0.7rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    border-radius: 1rem;
+    height: 5rem;
+    margin-bottom: 20rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.space{
+    min-height: 3rem;
+}
+
+
+.recent-tran h2{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;    
+}
+
+#transaction{
+    border-bottom: 1px solid #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 1.4rem;
+
+}
+
+#court h4{
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+#cdate{
+    padding-top: 5px;
+}
+
+#charge{
+    padding-top: 5px;
+    font-weight: 600;
+}
+
+.deduct{
+    color: red;
+}
+
+.credited{
+    color: green;
+}
+
+/** Recent Trans end **/
+
+
+/** Account Navbar **/
+
+.account-nav{
+    position: fixed;
+    top: 39.2rem;
+    left: 6rem;
+    background: white;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.25);
+    width: 13rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 2rem;
+    height: 2.3rem;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.account-nav i{
+    color: #A6A6A6;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.high i::before{
+    color: rgb(0, 104, 138);
+}
+
+.high{
+    background:#D9D9D9;
+    width: 4rem;
+    border-radius: 2rem;
+}
+
+
+
+
+
+
+
+
+/** BOTTOM NAV-BAR READY ***/
+
+.bottom-nav {
+    width: 100vw;
+    left: 0;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 0.7rem 0.7rem 0 0;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .bottom-nav i {
+    color: #424242;
+    font-size: 2.3rem;;
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .bx {
+    font-size: 30px;
+  }
+  
+  .nav-item .active {
+    color: #6A00FF;
+    text-shadow: 0px 0px 10px #2f74ff7a;
+  }
+  
+  .nav-label {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  

@@ -1,5 +1,5 @@
 {
-  "name": "iosd_project",
+  "name": "fettle",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -15,7 +15,15 @@
     "body-parser": "^1.20.0",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "mongodb": "^4.9.0",
-    "mongoose": "^6.5.2"
-  }
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imshivam-gupta/fettle_with_backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imshivam-gupta/fettle_with_backend/issues"
+  },
+  "homepage": "https://github.com/imshivam-gupta/fettle_with_backend#readme"
 }
