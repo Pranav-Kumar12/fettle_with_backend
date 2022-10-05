@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/home_mobile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+
+
+    <div class="header">
+
+        <img id="user-img" src="/images/user_gen.jpg " alt="user-img">
+
+        <div class="welcome-container">
+            <h3 id="welcome">Welcome Back!</h3>
+            <h3 id="uname"><%=name %></h3>
+        </div>
+
+        <div class="main-nav-pc">
+            <h3 style="color:#FF8A00;">HOME</h3>
+            <h3 class="home">BIDS</h3>
+            <h3 class="home">SUPPORT</h3>
+        </div>
+
+        
+        <img src="/images/1900x680_tpt.png" alt="" id="head-logo">
+        
+    </div>
+
+    <div class="college-banner">
+        <img src="/images/college-img.jpg" alt="college-banner-img">
+        <h1 class="college-name">NSUT</h1>
+    </div>
+
+    <h1 class="available-courts">Available Courts</h1>
+
+    <div class="courts-container">
+
+        <div class="court-card">
+            <div class="court-card-c1">
+                <i class='bx bxs-cricket-ball'></i>
+                <div class="court-card-c2">
+                    <h3 id="court-label">Cricket Ground</h3>
+                    <h4 id="rental" >Rental Equipment Available</h4>
+                </div>
+                <a href="/cricket_bid"><i class='bx bx-chevron-right' ></i></a>
+            </div>
+        </div>
+
+        <div class="court-card">
+            <div class="court-card-c1">
+                <i class='bx bxs-tennis-ball' ></i>
+                <div class="court-card-c2">
+                    <h3 id="court-label">Tennis Court</h3>
+                    <h4 id="rental" style="color:red">Rental Equipment Available</h4>
+                </div>
+                <a href="/tennis_bid"><i class='bx bx-chevron-right' ></i></a>
+            </div>
+        </div>
+
+        <div class="court-card">
+            <div class="court-card-c1">
+                <i class='bx bx-football' ></i>
+                <div class="court-card-c2">
+                    <h3 id="court-label">Football Ground</h3>
+                    <h4 id="rental">Rental Equipment Available</h4>
+                </div>
+                <a href="/football_bid"><i class='bx bx-chevron-right' ></i></a>
+            </div>
+        </div>
+
+
+
+    </div>
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item">
+            <i class='bx bx-home active'></i>
+        </a>
+
+        <a href="/bid_page" class="nav-item">
+            <i class='bx bx-money-withdraw'></i>
+        </a>
+
+        <a href="/support" class="nav-item">
+            <i class='bx bx-support'></i>
+        </a>
+
+        <a href="/profile" class="nav-item">
+            <i class='bx bx-user'></i>
+        </a>
+
+    </nav>
+</body>
+</html>

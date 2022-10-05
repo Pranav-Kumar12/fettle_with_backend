@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body 
+{
+    background: #D9D9D9;
+}
+
+ 
+main {
+    width: 100%;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #F9F7F7;
+    margin-bottom: 50rem;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+    height: 4rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 0.6rem;
+    margin-top: 0rem;
+    margin-left: 0;
+}
+  
+.header a i{
+    color: #000000;
+    font-size: 2.6rem;;
+    margin-left: 1rem;
+}
+
+#logo{
+    position: fixed;
+    top:5rem;
+    height: 90px;
+    left: 4rem;
+}
+
+
+section{
+    position: fixed;
+    bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.user_info{
+    padding: 0px;
+    margin-bottom: 2rem;
+}
+
+
+input.input {
+    width: 80vw;
+    /* padding: 0.3rem; */
+    padding-left: 2rem;
+    margin: 1rem;
+    margin-bottom: 0.1rem;
+    border-radius: 2rem;
+    border: hidden;
+    background: #FFFFFF;
+    border-radius: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 3rem;
+    color: #8A8A8A;
+}
+
+#em{
+    margin-bottom: 0rem;
+}
+
+
+
+.submit {
+    background: #150033;
+    border-radius: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 4.2rem;
+    text-align: center;
+    color: #D3B6FB;
+    width: 75%;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+

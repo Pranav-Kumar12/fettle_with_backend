@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/CSS/support-mob.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="header">
+        <a href="/login"><i class='bx bx-chevron-left' ></i></a>
+        <div class="bid-summary">
+            <h3 id="b-summ">Support</h3>
+        </div>
+    </div>
+
+    <div id="happy">
+        We are happy to help!
+    </div>
+
+    <div class="modrn-container">
+        <div class="modrn-cont-1">
+            <i class='bx bxs-error'></i>
+            <div class="modrn-cont-2">
+                <h2>Request Moderation</h2>
+                <h3>You must upload a video evidence of the issue, 
+                    our moderators will analyse the footage and take action accordingly
+                </h3>
+        </div>
+        </div>
+        <form action="/support" method="post" >
+        <input type="text" placeholder="Enter Google Drive Link" name="support_drive">  
+        <input type="submit" class="submit" value="SEND">
+        </form>
+    </div>
+
+    <div class="faq">
+        <div class="faq-cont-1">
+            <i class='bx bx-question-mark'></i>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        
+        <h3 class="que">Q: How will the points system work in the app ?</h3>
+
+        <h3 class="ans">
+            Ans: Each user will be given 200 points at the start of every month in their account. 
+            You can use it to bid for the courts. Also points of previous month will be carried over 
+            to subsequent month's balance.
+        </h3>
+
+        <h3 class="que">Q: How does the bidding system work?</h3>
+
+        <h3 id="last" class="ans">Ans: For each time slot students will place their bids, then after
+             mentioned time, the bidding period will be over and then the student with second 
+             highest bid will be alotted the court for that particular time slot. 
+        </h3>
+    </div>
+
+    <div class="still-uns">
+        Still have a doubt, no worries, contact <b>support@fettle.org</b>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="/login" class="nav-item">
+            <i class='bx bx-home '></i>
+        </a>
+
+        <a href="/bid_page" class="nav-item">
+            <i class='bx bx-money-withdraw'></i>
+        </a>
+
+        <a href="#" class="nav-item">
+            <i class='bx bx-support active'></i>
+        </a>
+
+        <a href="/profile" class="nav-item">
+            <i class='bx bx-user'></i>
+        </a>
+
+    </nav>
+
+</body>
+</html>

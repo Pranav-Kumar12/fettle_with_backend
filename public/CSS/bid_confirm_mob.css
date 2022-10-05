@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  margin-top: 6rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Top Bar CSS*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: white;
+  height: 4rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header a i {
+  color: #000000;
+  font-size: 2.6rem;
+  position: fixed;
+  transform: translate(-5rem, -50%);
+}
+
+#b-summ {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+}
+
+/*Bottom Nav CSS*/
+.bottom-nav {
+  width: 100vw;
+  padding: 0.5rem 0 0.5rem 0;
+  border-radius: 1.3rem 1.3rem 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.25);
+}
+
+.bottom-nav i {
+  color: #424242;
+  font-size: 2.3rem;
+}
+
+.bx {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-item .active {
+  color: #6a00ff;
+  text-shadow: 0px 0px 10px #2f74ff7a;
+}
+
+.nav-label {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*Top Cards CSS*/
+
+.bds-placed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #b6fbe2;
+  border-radius: 2rem;
+  width: 10rem;
+  height: 10rem;
+  padding-top: 1.8rem;
+}
+
+.bds-placed h3 {
+  font-family: "Montserrat";
+  font-weight: 1200;
+  font-size: 7rem;
+  line-height: 5rem;
+  color: #003215;
+}
+
+.bds-placed h5 {
+  text-align: center;
+}
+
+.bd-stat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nxt-rsv {
+  background: #d3b6fb;
+  border-radius: 30px;
+  width: 45%;
+  height: 10rem;
+  padding: 1rem;
+}
+
+.nxt-rsv h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #150033;
+  margin-top: 0.4rem;
+  margin-bottom: 0px;
+}
+
+.nxt-rsv h5 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.act-bid {
+  margin: 2.5rem 0 1rem 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+
+/*Court Card CSS*/
+
+.bid-container-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85vw;
+  margin-bottom: 3.5rem;
+}
+
+.bid-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ded3d3;
+}
+
+.court {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  width: 7rem;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.avg-bid {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  color: #535353;
+}
+
+.ur-bid {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  color: #000000;
+}
+
+.chng-bid {
+  background: #e87d00;
+  border-radius: 8px;
+  height: 3rem;
+  padding: 0.6rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.6rem;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.court-info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 1rem;
+  margin-left: 1.2rem;
+}
+
+.bid-container2 {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  align-items: center;
+  padding: 1rem;
+  margin: 4rem 0 5rem 0rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bid-input2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.bid-container2 h1 {
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.bid-input2 input {
+  background-color: #eeeeee;
+  border: none;
+  width: 70%;
+  padding: 0 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: inherit;
+  color: #8a8a8a;
+  border-radius: 0.5rem;
+}
+
+.bid-input2 button {
+  border: none;
+  background-color: #85e0ab;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  width: 30%;
+}
+
+.bid-input2 button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 6px grey;
+}
+
+.bid-input2 button i {
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: #00401a;
+  text-align: center;
+}
+
+@media screen and (orientation: portrait) {
+  .main-nav-pc {
+    display: none;
+  }
+
+  #head-logo {
+    display: none;
+  }
+}

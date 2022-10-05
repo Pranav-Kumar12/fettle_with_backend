@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    background: white;
+    margin-top: 4.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Top Bar CSS*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: white;
+    height: 4rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header a i{
+    color: #000000;
+    font-size: 2.6rem;
+    position: fixed;
+    transform: translate(-8rem, -50%);
+  }
+  
+  #b-summ {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+  }
+
+
+/*Bottom Nav CSS*/
+.bottom-nav {
+    width: 100vw;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 1.3rem 1.3rem 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .bottom-nav i {
+    color: #424242;
+    font-size: 2.3rem;;
+  }
+  
+  
+  .bx {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .nav-item .active {
+    color: #6A00FF;
+    text-shadow: 0px 0px 10px #2f74ff7a;
+  }
+  
+  .nav-label {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+
+#happy{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 110%;
+    color: #424242;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    margin-top: 3rem;
+}
+
+
+.modrn-container {
+    background: #F0C2C2;
+    border-radius: 30px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.modrn-cont-1 {
+    display: flex;
+}
+
+.modrn-cont-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modrn-cont-1 i {
+    font-size: 5rem;
+    color: #840000;
+    padding-right: 1rem;
+}
+
+.modrn-container h2{
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+.modrn-container h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.6rem;
+    color: #000000;
+    margin-bottom: 1rem;  
+}
+
+.modrn-container input{
+    background: #C99C9C;
+    border: none;
+    color: black;
+    font-size: 0.9rem;
+    font-family: inherit;
+    border-radius: 5px 5px 1rem 1rem;
+    padding: 0.6rem;
+    padding-left: 1rem;
+    width: 100%;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+
+.faq{
+    background: #D3B6FB;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.faq-cont-1 {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+
+.faq i {
+    color: #370085;
+    font-size: 5rem;
+    padding-right: 1rem;
+}
+
+.faq h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.faq .que{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 0.2rem;
+}
+
+.faq .ans{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 1rem;   
+}
+
+#last {
+    margin-bottom: 0;
+}
+
+
+.still-uns{
+    /* position: fixed;
+    bottom: 4.8rem; */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 18px;
+    text-align: center;
+    margin-left: 0.83rem;
+    color: #424242;
+    margin-bottom: 5rem;
+    margin-top: 1.5rem;
+}
+
+
+
+@media screen and (orientation:portrait) {
+    .main-nav-pc{
+        display: none;
+    }
+
+    #head-logo{
+        display: none;
+    }
+}
+
+
+
+
+
+

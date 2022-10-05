@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    background: #EEEEEE;
+    margin-top: 4.5rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Top Bar CSS*/
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+    height: 4rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.6rem;
+    margin-right: auto;
+}
+
+#welcome {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+#uname{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF8A00;
+}
+
+#user-img {
+    height: 100%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.4);
+}
+
+#head-logo {
+    height: 30px;
+    margin-right: 24px;
+}
+
+
+/*Bottom Nav CSS*/
+.bottom-nav {
+    width: 100vw;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 0.7rem 0.7rem 0 0;
+    margin-left: -0.8rem;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.bottom-nav i {
+    color: #424242;
+    font-size: 2.3rem;;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.bx {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-item .active {
+    color: #6A00FF;
+    text-shadow: 0px 0px 10px #2f74ff7a;
+}
+
+.nav-label {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/*College Banner CSS*/
+.college-banner {
+    position: relative;
+    text-align: center;
+}
+
+.college-banner img {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+    filter: brightness(40%);
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.college-banner h1 {
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 117px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    
+
+}
+
+
+.available-courts {
+    margin: 0.9rem 0 1rem 0.8rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 49px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.65);
+}
+
+
+/*Court Card CSS*/
+
+.courts-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width:100%;
+}
+
+.court-card {
+    margin: 0.5 rem;
+    padding: 0.7rem;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    margin-bottom: 17px;;
+}
+
+.court-card-c1 {
+    display: flex;
+}
+
+.court-card-c1 i {
+    color:#424242;
+    font-size: 2.8rem;
+    margin-right: 1rem;
+}
+
+.court-card-c2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#court-label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: -5px;
+    /* line-height: 0%; */
+    color: #000000;
+    text-align: left;
+}
+
+#rental {
+    margin-top: 1px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8rem;
+    /* line-height: 0%; */
+    text-align: left;
+    color: #16A813;
+}
+
+
+
+@media screen and (orientation:portrait) {
+    .main-nav-pc{
+        display: none;
+    }
+}

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="CSS/register.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>	
+
+		<div class="header">
+			<a href="/"><i class='bx bx-chevron-left' ></i></a>
+		</div>
+
+		<img src="images/1900x680_tpt.png" alt="" id="logo">
+
+		<main>
+			<section>
+				<div class="container">
+					<div class="login-content">
+						<form action="/register" method="post" onsubmit="return validate();">
+
+
+							<div class="user_info">
+								<div class="div">
+									<input type="text" class="input" id="user_name" name="username" placeholder="Email" autocomplete="none">
+								</div>
+								<div class="div">
+									<input type="text" class="input" id="user_name" name="name_of_person" placeholder="Name" autocomplete="none">
+								</div>
+								<div class="div">
+									<input type="password" class="input" id="user_pass" name="password" placeholder="Password" autocomplete="none">
+								</div>
+							</div>
+							<!-- <div class="link">
+								<a href="/login">Already have an ID? Log in!</a><br>
+							</div>	 -->
+							<input type="submit" class="submit" value="SIGN UP">
+						</form>
+					</div>
+				</div>
+			</section>
+
+		
+		</main>
+	</header>
+
+
+	<script src="js/index.js"></script>
+</body>
+</html>

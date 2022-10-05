@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/bidding-mobile.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="/login"><i class="bx bx-chevron-left"></i></a>
+      <h3 id="b-summ">Available Sessions</h3>
+      <h2><%= sport %></h2>
+    </div>
+
+    <div id="spacer"></div>
+
+    <div class="day-container" id="th">
+      <div class="day-date">
+        <h1 class="date">27 June 2020,</h1>
+        <h1 class="day">Thursday</h1>
+      </div>
+
+      <div class="time-slots">
+        <button class="time">8:00-9:00</button>
+        <button class="time">9:00-10:00</button>
+        <button class="time tournament">10:00-11:00</button>
+        <button class="time">11:00-12:00</button>
+        <button class="time">12:00-13:00</button>
+        <button class="time">13:00-14:00</button>
+      </div>
+    </div>
+
+    <div class="day-container" id="last_day">
+      <div class="day-date">
+        <h1 class="date">28 June 2020,</h1>
+        <h1 class="day">Friday</h1>
+      </div>
+
+      <div class="time-slots">
+        <button class="time">8:00-9:00</button>
+        <button class="time">9:00-10:00</button>
+        <button class="time">10:00-11:00</button>
+        <button class="time tournament" id="disabled">11:00-12:00</button>
+        <button class="time">12:00-13:00</button>
+        <button class="time">13:00-14:00</button>
+      </div>
+    </div>
+    
+    <div class="bid-container">
+      <h1>Confirm Your Bid</h1>
+      <div class="bid-input">
+        <form action="/cricket_bid" method="post" id="form">
+        <input type="number" placeholder="Enter Bid Amount" name="bid_amount" >
+        <!-- <button><i class="bx bx-check" name="submit_bid" type="submit"></i></button> -->
+        <input type="submit" class="bx bx-check" value="Submit bid">
+        </form>
+      </div>
+    </div>
+    
+<!-- 
+    <form action="\cricket_bid" method="post">
+      <input type="number" placeholder="Enter Bid Amount" name="bid_amount" />
+      <button><i class="bx bx-check" name="submit_bid" type="submit"></i></button>
+    </form> -->
+
+    <div class="modal1 hidden">
+      <button class="close-modal1">&times;</button>
+      <h1>Bid Successfully Registered..</h1>
+    </div>
+    <div class="modal2 hidden">
+      <button class="close-modal2">&times;</button>
+      <h1>Invalid Bid..</h1>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <nav class="bottom-nav">
+      <a href="/login" class="nav-item">
+        <i class="bx bx-home active"></i>
+      </a>
+
+      <a href="/bid_page" class="nav-item">
+        <i class="bx bx-money-withdraw"></i>
+      </a>
+
+      <a href="/support" class="nav-item">
+        <i class="bx bx-support"></i>
+      </a>
+
+      <a href="/profile" class="nav-item">
+        <i class="bx bx-user"></i>
+      </a>
+    </nav>
+
+    <script src="js/bidding.js"></script>
+  </body>
+</html>

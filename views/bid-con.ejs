@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/bid_confirm_mob.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="/login"><i class="bx bx-chevron-left"></i></a>
+      <div class="bid-summary">
+        <h3 id="b-summ">Bid Summary</h3>
+      </div>
+
+      <!-- FOR PC BASED ONLY -->
+      <div class="main-nav-pc">
+        <h3 style="color: #ff8a00">HOME</h3>
+        <h3 class="home">BIDS</h3>
+        <h3 class="home">SUPPORT</h3>
+      </div>
+      <img src="/images/1900x680_tpt.png" alt="" id="head-logo" />
+      <!--  UPTO THIS -->
+    </div>
+
+    <div class="bd-stat">
+      <div class="bds-placed">
+        <h3><%=bid_number%></h3>
+        <h5>BIDS PLACED</h5>
+      </div>
+
+      <div class="nxt-rsv">
+        <h3>13:00</h3>
+        <h3>14:00</h3>
+        <h5>NEXT RESERVED</h5>
+      </div>
+    </div>
+
+    <h1 class="act-bid">Active Bids</h1>
+
+    <div class="bid-container-info">
+      <div class="court-info c-one">COURT</div>
+      <div class="court-info c-two">AVG BID</div>
+      <div class="court-info c-three">YOUR BID</div>
+      <div class="court-info c-two">MODIFY BID</div>
+    </div>
+
+    <div class="bid-container">
+      <div class="bid-info">
+        <div class="court">Badminton Court</div>
+        <div class="avg-bid">$75</div>
+        <div class="ur-bid" id="test">$50</div>
+        <button class="chng-bid">CHANGE BID</button>
+      </div>
+
+      <div class="bid-info">
+        <div class="court">Badminton Court</div>
+        <div class="avg-bid">$75</div>
+        <div class="ur-bid" id="test">$50</div>
+        <button class="chng-bid">CHANGE BID</button>
+      </div>
+
+      <div class="bid-info">
+        <div class="court">Badminton Court</div>
+        <div class="avg-bid">$75</div>
+        <div class="ur-bid" id="test">$50</div>
+        <button class="chng-bid">CHANGE BID</button>
+      </div>
+    </div>
+
+    <div class="bid-container2">
+      <h1>Confirm Your Bid</h1>
+      <div class="bid-input2">
+        <input type="number" placeholder="Enter Bid Amount" />
+        <button><i class="bx bx-check"></i></button>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="/login" class="nav-item">
+        <i class="bx bx-home"></i>
+      </a>
+
+      <a href="#" class="nav-item">
+        <i class="bx bx-money-withdraw active"></i>
+      </a>
+
+      <a href="/support" class="nav-item">
+        <i class="bx bx-support"></i>
+      </a>
+
+      <a href="/profile" class="nav-item">
+        <i class="bx bx-user"></i>
+      </a>
+    </nav>
+
+    <script src="js/Bid_Status.js"></script>
+  </body>
+</html>

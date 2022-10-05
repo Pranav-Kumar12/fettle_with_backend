@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/CSS/account-mobile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Account</title>
+</head>
+<body>
+    <div class = "topbar">
+        <a href="/login" id="back"><i class='bx bx-chevron-left'></i></a>
+        <h1>Your Account</h1>
+        <a href="/" id="exit"><i class='bx bx-exit' ></i></a>
+    </div>
+
+    <div class="account-banner">
+        <img src="/images/user_gen.jpg" alt="photo" id="pic">
+        <div id="user-info">
+            <h1 id="name"><%=name%></h1>
+            <h1 id="institute">NSUT, Year-2</h1>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="balance-box">
+        <i class='bx bxs-coin-stack' ></i>
+        <div id="balance-info">
+            <h1 id="current-balance">CURRENT BALANCE</h1>
+            <h1 id="balance"><%=bid_points%></h1>
+        </div>
+    </div>
+
+    <div class="bottom-box-container">
+        <div class="favorite">
+            <i class='bx bxs-tennis-ball'></i>
+            <h1 class="desc">FAVOURITE</h1>
+        </div>
+    
+        <div class="tickets-pending">
+            <h2>2</h2>
+            <h1 class="desc">TICKETS PENDING</h1>
+        </div>
+    
+        <div class="complaints">
+            <h2><%=complaint%></h2>
+            <h1 class="desc">COMPLAINTS</h1>
+        </div>
+
+        <div class="ratings">
+            <h2>4.4</h2>
+            <h1 class="desc">RATINGS</h1>
+        </div>
+    </div>
+    
+
+    <nav class="bottom-nav">
+      
+        <a href="/login" class="nav-item">
+            <i class='bx bx-home'></i>
+        </a>
+  
+        <a href="/bid_page" class="nav-item">
+            <i class='bx bx-money-withdraw'></i>
+        </a>
+  
+        <a href="/support" class="nav-item">
+            <i class='bx bx-support'></i>
+        </a>
+  
+        <a href="#" class="nav-item">
+            <i class='bx bx-user  active'></i>
+        </a>
+  
+      </nav>
+
+    
+</body>
+</html>
