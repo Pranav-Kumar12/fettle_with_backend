@@ -126,11 +126,11 @@ app.get("/support",function(req,res){
 
 app.get("/account-info",function(req,res){
     res.sendFile(__dirname+"\\public\\html\\account-info.html")
-});
+})
 
 app.get("/account-pts",function(req,res){
-    res.render("account-pts",{bid_points:bid_coins})
-});
+    res.sendFile(__dirname+"\\public\\html\\account-pts.html")
+})
 
 app.post("/support",function(req,res){
     user.findOne({username: username}, function(err, doc){
@@ -228,10 +228,7 @@ app.post("/login", function(req, res){
 
 
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 3000;
-}
+const port = process.env.PORT || 5000
 
 app.listen(port, function(){
     console.log("Server is running!");
