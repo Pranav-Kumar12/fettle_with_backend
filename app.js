@@ -129,7 +129,7 @@ app.get("/account-info",function(req,res){
 })
 
 app.get("/account-pts",function(req,res){
-    res.sendFile(__dirname+"\\public\\html\\account-pts.html")
+    res.render("account-pts",{bid_points:bid_coins})
 })
 
 app.post("/support",function(req,res){

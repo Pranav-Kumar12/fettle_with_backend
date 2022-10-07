@@ -153,17 +153,32 @@ body {
     margin-bottom: 1rem;  
 }
 
-.modrn-container input{
+.link{
     background: #C99C9C;
     border: none;
     color: black;
     font-size: 0.9rem;
     font-family: inherit;
-    border-radius: 5px 5px 1rem 1rem;
+    border-radius: 5px;
     padding: 0.6rem;
     padding-left: 1rem;
     width: 100%;
 }
+
+
+.submit{
+    background: #840000;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    font-family: inherit;
+    border-radius: 5px 5px 1rem 1rem;
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    width: 100%;
+}
+
 
 ::placeholder {
     color: #000000;

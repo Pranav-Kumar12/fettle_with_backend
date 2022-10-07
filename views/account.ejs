@@ -14,12 +14,12 @@
         <a href="/login" id="back"><i class='bx bx-chevron-left'></i></a>
         <h1>Your Account</h1>
         <form action="/profile" method="post">
-        <input type="submit" class="bx bx-exit" value="Log Out">
+        <!-- <input type="submit" class="bx bx-exit" id="log-out" value="LOGOUT"> -->
         </form>
     </div>
 
     <div class="account-banner">
-        <img src="/images/user_gen.jpg" alt="photo" id="pic">
+        <img src="/images/user.jpg" alt="photo" id="pic">
         <div id="user-info">
             <h1 id="name"><%=name%></h1>
             <h1 id="institute">NSUT, Year-2</h1>
@@ -73,7 +73,7 @@
             <i class='bx bx-support'></i>
         </a>
   
-        <a href="#" class="nav-item">
+        <a href="/profile" class="nav-item">
             <i class='bx bx-user  active'></i>
         </a>
   

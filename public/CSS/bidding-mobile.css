@@ -132,10 +132,10 @@ body {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
-.bid-input {
+.bid-input #form {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 1rem;
 }
 
@@ -145,7 +145,7 @@ body {
   font-size: 1.4rem;
 }
 
-.bid-input input {
+/* .bid-input #form input {
   background-color: #eeeeee;
   border: none;
   width: 70%;
@@ -155,27 +155,48 @@ body {
   font-family: inherit;
   color: #8a8a8a;
   border-radius: 0.5rem;
-}
-
-.bid-input .bx  {
+} */
+/* 
+.bid-input #form input .bx  {
   border: none;
   background-color: #85e0ab;
   border-radius: 0.5rem;
   margin-left: 1rem;
   width: 60%;
+} */
+
+.ip1{
+  background-color: #eeeeee;
+  border: none;
+  width: 70%;
+  padding: 0 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: inherit;
+  color: #8a8a8a;
+  border-radius: 0.5rem;
+  height: 3rem;;
 }
 
-.bid-input button:hover {
+.ip2{
+  width:20%;
+  border: none;
+  background-color: #85e0ab;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+/* .bid-input button:hover {
   cursor: pointer;
   box-shadow: 2px 2px 6px grey;
-}
+} */
 
-.bid-input button i {
+/* .bid-input button i {
   font-weight: 900;
   font-size: 3.5rem;
   color: #00401a;
   text-align: center;
-}
+} */
 
 /** BOTTOM NAV-BAR READY ***/
 
