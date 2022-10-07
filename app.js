@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const { urlencoded } = require("body-parser");
 
 mongoose.connect("mongodb://localhost:27017/userdb", {useNewUrlParser: true});
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 const app = express();
 app.use(express.static("public"));
@@ -29,6 +30,14 @@ const bid_schema = new mongoose.Schema({
     sport:{
         type: String,
         required: true
+    },
+    date:{
+        type: String,
+        required: true
+    },
+    time:{
+        type:String,
+        required:true
     }
 });
 
@@ -104,16 +113,23 @@ app.get("/bid_page",function(req,res){
     res.render("bid-con",{bid_number:bid_time});
 });
 
+var date = new Date(); 
+var current_date = date.getDate() + "/"+ (date.getMonth()+1)  + "/" + date.getFullYear();
+var dayName = days[date.getDay()]; 
+date.setDate(date.getDate() + 1);   
+var nextdayname=days[date.getDay()];
+var next_date = date.getDate() + "/"+ (date.getMonth()+1)  + "/" + date.getFullYear();
+
 app.get("/cricket_bid",function(req,res){
-    res.render("bidding",{sport:"CRICKET BIDDING"});
+    res.render("bidding",{sport:"CRICKET BIDDING",today_date:current_date,today_day:dayName,next_date:next_date,next_day:nextdayname});
 });
 
 app.get("/tennis_bid",function(req,res){
-    res.render("bidding",{sport:"TENNIS BIDDING"});
+    res.render("bidding",{sport:"TENNIS BIDDING",today_date:current_date,today_day:dayName,next_date:next_date,next_day:nextdayname});
 });
 
 app.get("/football_bid",function(req,res){
-    res.render("bidding",{sport:"FOOTBALL BIDDING"});
+    res.render("bidding",{sport:"FOOTBALL BIDDING",today_date:current_date,today_day:dayName,next_date:next_date,next_day:nextdayname});
 });
 
 app.get("/profile",function(req,res){
@@ -170,6 +186,7 @@ app.post("/cricket_bid",function(req,res){
     // user.findOne({username:username},function(err, doc){
 
     // })
+    console.log(req.body);
     bid_time++;
     var dec_bid_points=req.body.bid_amount;
     bid_coins-=dec_bid_points;

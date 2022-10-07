@@ -8,6 +8,7 @@ const BtnCloseModal2 = document.querySelector(".close-modal2");
 
 function MyFunction() {
   document.querySelector(".tournament").disabled = true;
+  document.getElementById("disabled").disabled = true;
 }
 MyFunction();
 

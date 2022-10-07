@@ -24,18 +24,17 @@
     <div class="header">
       <a href="/login"><i class="bx bx-chevron-left"></i></a>
       <h3 id="b-summ">Available Sessions</h3>
-      <h2><%= sport %></h2>
+      <!-- <h2><%= sport %></h2> -->
     </div>
-
     <div id="spacer"></div>
 
     <div class="day-container" id="th">
       <div class="day-date">
-        <h1 class="date">27 June 2020,</h1>
-        <h1 class="day">Thursday</h1>
+        <h1 class="date"><%=today_date%>,</h1>
+        <h1 class="day"><%=today_day%></h1>
       </div>
-
       <div class="time-slots">
+        <!-- <button class="time">8:00-9:00</button> -->
         <button class="time">8:00-9:00</button>
         <button class="time">9:00-10:00</button>
         <button class="time tournament">10:00-11:00</button>
@@ -47,8 +46,8 @@
 
     <div class="day-container" id="last_day">
       <div class="day-date">
-        <h1 class="date">28 June 2020,</h1>
-        <h1 class="day">Friday</h1>
+        <h1 class="date"><%=next_date%>,</h1>
+        <h1 class="day"><%=next_day%></h1>
       </div>
 
       <div class="time-slots">
@@ -60,17 +59,16 @@
         <button class="time">13:00-14:00</button>
       </div>
     </div>
-    
+    <form action="/cricket_bid" method="post" id="form">
     <div class="bid-container">
       <h1>Confirm Your Bid</h1>
       <div class="bid-input">
-        <form action="/cricket_bid" method="post" id="form">
         <input type="number" placeholder="Enter Bid Amount" name="bid_amount" >
         <!-- <button><i class="bx bx-check" name="submit_bid" type="submit"></i></button> -->
         <input type="submit" class="bx bx-check" value="Submit bid">
-        </form>
-      </div>
+        </div>
     </div>
+    </form>
     
 <!-- 
     <form action="\cricket_bid" method="post">
@@ -102,7 +100,7 @@
         <i class="bx bx-support"></i>
       </a>
 
-      <a href="/profile" class="nav-item">
+      <a href="/account-info" class="nav-item">
         <i class="bx bx-user"></i>
       </a>
     </nav>
